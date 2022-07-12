@@ -20,7 +20,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install cookiec
 
 ```bash
 pip install cookiecutter
-cookiecutter https://github.com/ksuaning-au/python_template
+cookiecutter https://github.com/ksuaning-au/cookiecutter-python-template
 ```
 
 ## License

@@ -1,0 +1,37 @@
+repos:
+  - repo: local
+    hooks:
+      - id: requirements
+        name: requirements
+        stages: [ commit ]
+        language: system
+        entry: make requirements
+        types: [ python ]
+
+      - id: black
+        name: black
+        stages: [ commit ]
+        language: system
+        entry: make format
+        types: [ python ]
+
+      - id: check
+        name: check
+        stages: [ commit ]
+        language: system
+        entry: make check
+        types: [ python ]
+
+      - id: test
+        name: test
+        stages: [ commit ]
+        language: system
+        entry: make test
+        types: [ python ]
+
+      - id: clean
+        name: clean
+        stages: [ commit ]
+        language: system
+        entry: make clean
+        types: [ python ]

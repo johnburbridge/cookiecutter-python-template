@@ -1,0 +1,17 @@
+{
+  "project_name": "Python Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.project_slug.replace('-', '') }}",
+  "author": "Project Author",
+  "github_user": "github-user",
+  "python_version": [
+    "3.7",
+    "3.8",
+    "3.9",
+    "3.10"
+  ],
+  "copyright_year": "2022",
+  "_copy_without_render": [
+    ".github/*"
+  ]
+}

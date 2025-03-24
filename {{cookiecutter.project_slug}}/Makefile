@@ -38,6 +38,10 @@ htmlcov:
 requirements:
 	pip freeze > requirements.txt
 
+.PHONY: requirements-helix
+requirements:
+	pip install -r requirements-helix.txt
+
 .PHONY: lint
 lint:
 	flake8 {{ cookiecutter.package_name }} tests
